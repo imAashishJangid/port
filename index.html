@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>THE ASHISH - Developer Plannet</title>
+    <style>
+      * 
+      {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+      }
+      body
+      {
+        background-color: rgb(4, 4, 43);
+      }
+      header 
+      {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(2, 2, 24);
+        color: ghostwhite;
+        font-size: 40px;
+        flex-wrap: wrap;
+      }
+      .container
+      {
+        margin: 1vh 0px;
+      }
+      .im2 
+      {
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      ul 
+      {
+        display: flex;
+        font-size: 20px;
+        position: relative;
+        flex-wrap: wrap;
+      }
+
+      ul li 
+      {
+        list-style: none;
+        margin: 0px 30px;
+        transition: 0.4s;
+        z-index: 1;
+      }
+      #f::after 
+      {
+        content: "";
+        border-bottom: 2px solid ghostwhite;
+        position: absolute;
+        width:0%;
+        height: 30px;
+        transition: 0.4s ease-in-out;
+        left: 0px;
+        z-index: -2;
+      }
+      #f:hover::after
+      {
+        width: 100%;
+        color: #00bcff;
+        border-bottom: 2px solid ghostwhite;
+      }
+      ul li:hover 
+      {
+        color: #00bcff;
+        transform: scale(1.1);
+      }
+      ul a 
+      {
+        text-decoration: none;
+        color: ghostwhite;
+      }
+
+      main
+      {
+         
+        /* display: flex;
+        justify-content: space-evenly;
+        color: ghostwhite; */
+      }
+      .se1
+      {
+        display: flex;
+        justify-content:  space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .left
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; 
+        /* background-color: #00bcff; */
+      }
+      .para {
+        
+        color: ghostwhite;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        margin: 50% 0px;
+        position: relative;
+        z-index: 8;
+        /* background-color: red; */
+      }
+      .btn
+      {
+        margin: 30px 0px;
+        position: relative;
+        left: -10px;
+      }
+      button
+      {
+        padding: 3px;
+        border-radius: 5px;
+        color: ghostwhite;
+        background-color: #25257c;
+        border: none;
+        margin: 0px 10px;
+        font-size: 14px;
+        box-shadow: 1px 1px 5px  ghostwhite;
+      }
+      i{
+        color: rgb(145, 139, 218);
+      }
+     
+      .im1 {
+        height: 50vh;
+        margin: 5vh 0px;
+        flex-wrap: wrap;
+      }
+
+      
+      #element {
+        color: #37a8e1;
+      }
+      
+      hr{
+      width: 70%;
+       margin: auto;
+       color:grey;
+       opacity: 0.5;
+     }
+     .se2 h1{
+      margin: 50px 30px;
+        color: ghostwhite;
+      }
+
+      .Projects {
+        display: grid;
+        grid-template-columns: 25vw 25vw 25vw;
+        grid-template-rows: 30vh 30vh;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+      }
+      .se2 div div{
+         padding: 50px;
+         background-color:  transparent;
+         margin: 15px 0px;
+  
+         border-radius: 3px;
+         transition: 0.5s;
+         
+      }
+      .pro1,.pro2,.pro3,.pro4,.pro5,.pro6{
+         
+         box-shadow: -2px 2px 5px wheat;
+       }
+      
+      .pro11
+      {
+        background-image: url(img/port.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+         
+      }
+      
+      .pro22
+      {
+        background-image: url(img/net.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+         
+      }
+      .pro33
+      {
+        background-image: url(img/tic.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+         
+      }
+      .pro44
+      {
+        background-image: url(img/chess.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+         
+      }
+      .pro55
+      {
+        background-image: url(img/tic.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+         
+      }
+      .pro66
+      {
+        background-image: url(img/tic.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+         
+      }
+      .se2 div div:hover{
+         transform: scale(1.05);
+         
+      }
+     
+    </style>
+  </head>
+
+  <body draggable="true">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+  
+    <header>
+      <div class="container">
+        <img class="im2" src="img/logo.png" alt="" />
+      </div>
+      <div class="navbar">
+        <ul>
+          <a href="#"> <li id="f">Home</li></a>
+          <a href="#"> <li id="f">Projects</li></a>
+          <a href="#"><li id="f">Contect me</li></a>
+          <a href="#"><li id="f">About</li></a>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="se1">
+        <div class="left">
+          <div class="para">
+            <h2 >
+              I'M AHSISH <br />
+              Welcome to the developer plannet <br />
+              Im a <span id="element"></span>
+            </h2>
+            <div class="btn">
+              <button type="button">Downloade Resume</button>
+              <button type="button">Github <i class="fa-brands fa-github"></i></button>
+            </div>
+          </div>
+          
+        </div>
+        <div class="right">
+          <div class="imag">
+            <img class="im1" src="img/ddev.png" alt="" />
+          </div>
+        </div>
+      </section>
+ <hr>
+      <section class="se2">
+        <h1>My Projects </h1>
+        <div class="Projects">
+          <div class="pro1" > 
+            <div class="pro11"></div>
+            <h2>My Portfolio</h2>
+          </div>
+          <div class="pro2">
+            <div class="pro22"></div>
+            <h2>My Portfolio</h2>
+          </div>
+          <div class="pro3">
+            <div class="pro33"></div>
+          <h2>My Portfolio</h2>
+        </div>
+          <div class="pro4">
+            <div class="pro44"></div>
+            <h2>My Portfolio</h2>
+          </div>
+          <div class="pro5"> 
+            <div class="pro55"></div>
+            <h2>My Portfolio</h2>
+          </div>
+          <div class="pro6">
+            <div class="pro66"></div>
+            <h2>My Portfolio</h2> </i></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Website developer", "Coder", "App developer"],
+        typeSpeed: 50,
+      });
+    </script>
+    <footer></footer>
+  </body>
+</html>
